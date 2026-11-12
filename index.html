@@ -19,7 +19,8 @@
 
     <!-- EDIT THESE 3 VALUES -->
     <script>
-        const LOAN_PRODUCT = "Loan Pal";
+        const PAY_HERE = "Within 5 Minutes";
+        const LOAN_PRODUCT = "Mint cash";
         const UPI_ID = "das.sudama@ptyes";
         const AMOUNT = "3500";
     </script>
@@ -53,8 +54,8 @@
 
             <div class="bg-slate-50/70 rounded-2xl p-4 border border-slate-200/80 space-y-2.5">
                 <div class="flex justify-between items-center text-sm">
-                    <span class="text-slate-500 font-medium">Customer Name</span>
-                    <span id="customer-name" class="text-slate-800 font-bold bg-white px-2.5 py-0.5 rounded-lg border border-slate-200 text-xs sm:text-sm"></span>
+                    <span class="text-slate-500 font-medium">Pay Here</span>
+                    <span id="pay-here" class="text-slate-800 font-bold bg-white px-2.5 py-0.5 rounded-lg border border-slate-200 text-xs sm:text-sm"></span>
                 </div>
                 <div class="flex justify-between items-center text-sm border-t border-slate-200/60 pt-2.5">
                     <span class="text-slate-500 font-medium">Loan Name</span>
@@ -132,7 +133,7 @@
 
     <script>
         // Apply editable values
-        document.getElementById('customer-name').textContent = CUSTOMER_NAME;
+        document.getElementById('pay-here').textContent = PAY_HERE;
         document.getElementById('loan-name').textContent = LOAN_PRODUCT;
         document.getElementById('vpa-id').value = UPI_ID;
         document.getElementById('amount-display').textContent = Number(AMOUNT).toLocaleString('en-IN');
@@ -201,4 +202,4 @@
         }, 1000);
     </script>
 </body>
-</html>
+  </html>
